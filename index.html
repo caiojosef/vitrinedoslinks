@@ -9,25 +9,26 @@
         content="Central dos meus links: listas do Mercado Livre, vídeos do YouTube, envios recentes e playlists." />
     <meta name="theme-color" content="#0b0b0b" />
 
-    <!-- SEO/OG (ajuste quando tiver o domínio do GitHub Pages) -->
+    <!-- SEO/OG -->
     <meta property="og:title" content="Vitrino dos Links" />
     <meta property="og:description" content="Minhas listas do Mercado Livre, vídeos e playlists." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://seuusuario.github.io/vitrino-dos-links/" />
     <meta property="og:image" content="https://seuusuario.github.io/vitrino-dos-links/og-image.jpg" />
 
-    <!-- Arquivo de estilos (enviar depois) -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- AdSense GLOBAL (apenas UMA vez) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8625122685851764"
         crossorigin="anonymous"></script>
 
-    <!-- Favicon opcional
-  <link rel="icon" href="favicon.ico" />
-  -->
+    <!-- Se quiser página AMP separada, depois crie /index.amp.html e descomente a linha abaixo -->
+    <!-- <link rel="amphtml" href="/index.amp.html"> -->
 </head>
 
 <body>
-    <!-- Link de pular para conteúdo (acessibilidade) -->
+    <!-- Acessibilidade -->
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
     <!-- Navbar fixa -->
@@ -37,7 +38,6 @@
                 <a class="brand" href="#topo" aria-label="Ir ao topo">
                     <img src="logo.png" alt="Vitrine dos Links" class="brand-logo">
                 </a>
-
             </div>
             <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
             <ul id="menu" class="nav-menu">
@@ -49,79 +49,61 @@
         </nav>
     </header>
 
-    <!-- Espaçador para compensar a navbar fixa (altura será definida no CSS) -->
     <div class="nav-spacer" aria-hidden="true"></div>
 
     <main id="conteudo">
-        <!-- AdSense: slot logo abaixo da navbar -->
+        <!-- AD: Topo -->
         <section class="ad-wrap ad-top" aria-label="Publicidade topo">
-            <!-- Placeholder de anúncio
-      *Quando tiver o código do AdSense, substitua este bloco por ele.
-      Exemplo (comentei para não bloquear build do GitHub Pages):
-
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=SEU_CLIENT_ID" crossorigin="anonymous"></script>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="SEU_CLIENT_ID"
-           data-ad-slot="SEU_SLOT_ID"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      -->
-            <div class="ad-placeholder">Espaço para anúncio (topo)</div>
+            <ins class="adsbygoogle" style="display:block; width:100%" data-ad-client="ca-pub-8625122685851764"
+                data-ad-slot="6121867478" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                window.addEventListener('load', function () {
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                });
+            </script>
         </section>
 
-        <!-- Hero/intro simples -->
+        <!-- Hero -->
         <section class="hero" id="topo" aria-label="Introdução">
             <h1>Vitrino dos Links</h1>
             <p>Minhas listas do Mercado Livre, vídeos do YouTube, envios recentes e playlists — tudo em um só lugar.</p>
         </section>
 
-        <!-- Seção: Listas Mercado Livre -->
+        <!-- Listas ML -->
         <section id="listas-ml" class="section" aria-labelledby="tit-listas-ml">
             <div class="section-head">
                 <h2 id="tit-listas-ml">Listas do Mercado Livre</h2>
                 <p class="section-sub">Memória RAM, SSD, placas de vídeo e mais.</p>
             </div>
 
-            <!-- Grid de cartões. Você vai preencher os links “href” no HTML mesmo ou depois via JS. -->
             <div class="card-grid">
-                <!-- Exemplo de cartão de lista ML -->
                 <article class="card">
                     <h3>Memória RAM DDR5 6000 MHz</h3>
                     <p>Seleção de módulos DDR5 6000 MHz para upgrade.</p>
                     <a class="button" target="_blank" rel="noopener"
-                        href="https://lista.mercadolivre.com.br/sua-lista-ram-6000">
-                        Abrir no Mercado Livre
-                    </a>
+                        href="https://lista.mercadolivre.com.br/sua-lista-ram-6000">Abrir no Mercado Livre</a>
                 </article>
-
                 <article class="card">
                     <h3>SSDs NVMe Gen4</h3>
                     <p>SSDs rápidos para jogos e edição.</p>
                     <a class="button" target="_blank" rel="noopener"
-                        href="https://lista.mercadolivre.com.br/sua-lista-ssd-gen4">
-                        Abrir no Mercado Livre
-                    </a>
+                        href="https://lista.mercadolivre.com.br/sua-lista-ssd-gen4">Abrir no Mercado Livre</a>
                 </article>
-
                 <article class="card">
                     <h3>Placas de Vídeo Custo/Benefício</h3>
                     <p>Minha curadoria de GPUs acessíveis.</p>
                     <a class="button" target="_blank" rel="noopener"
-                        href="https://lista.mercadolivre.com.br/sua-lista-gpu">
-                        Abrir no Mercado Livre
-                    </a>
+                        href="https://lista.mercadolivre.com.br/sua-lista-gpu">Abrir no Mercado Livre</a>
                 </article>
             </div>
 
-            <!-- AdSense entre seções (in-content) -->
+            <!-- (se quiser outro anúncio no meio, troque este placeholder por um <ins> como no topo) -->
             <div class="ad-wrap ad-inline" aria-label="Publicidade dentro do conteúdo">
                 <div class="ad-placeholder">Espaço para anúncio (conteúdo)</div>
             </div>
         </section>
 
-        <!-- Seção: Vídeos (YouTube) -->
+        <!-- Vídeos -->
         <section id="videos" class="section" aria-labelledby="tit-videos">
             <div class="section-head">
                 <h2 id="tit-videos">Vídeos</h2>
@@ -129,7 +111,6 @@
             </div>
 
             <div class="video-grid">
-                <!-- Diminua/ajuste os iframes depois conforme desejar -->
                 <article class="video-card">
                     <div class="video-embed ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Vídeo 1" frameborder="0"
@@ -150,7 +131,7 @@
             </div>
         </section>
 
-        <!-- Seção: Envios recentes (cards simples com links) -->
+        <!-- Envios -->
         <section id="envios" class="section" aria-labelledby="tit-envios">
             <div class="section-head">
                 <h2 id="tit-envios">Envios Recentes</h2>
@@ -158,18 +139,15 @@
             </div>
 
             <div class="card-list">
-                <!-- Cada item é um link externo ou interno (a página será simples e sem BD, então link externo é o padrão) -->
                 <a class="list-item" target="_blank" rel="noopener"
                     href="https://lista.mercadolivre.com.br/seu-envio-mais-recente-1">
                     <span class="tag">ML</span>
                     <span class="text">Memória DDR5 6000 — kit recomendado</span>
                 </a>
-
                 <a class="list-item" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=VIDEO_ID_3">
                     <span class="tag">YT</span>
                     <span class="text">Review rápido: upgrade de RAM no Nitro V15</span>
                 </a>
-
                 <a class="list-item" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/outro-link">
                     <span class="tag">ML</span>
                     <span class="text">SSDs NVMe em oferta</span>
@@ -177,7 +155,7 @@
             </div>
         </section>
 
-        <!-- Seção: Playlists (botões/link cards) -->
+        <!-- Playlists -->
         <section id="playlists" class="section" aria-labelledby="tit-playlists">
             <div class="section-head">
                 <h2 id="tit-playlists">Playlists</h2>
@@ -193,7 +171,7 @@
                     href="https://www.youtube.com/playlist?list=PLAYLIST_ID_3">Custo/Benefício ML</a>
             </div>
 
-            <!-- Outro slot de anúncio opcional -->
+            <!-- (outro ponto de anúncio opcional aqui) -->
             <div class="ad-wrap ad-inline" aria-label="Publicidade dentro do conteúdo">
                 <div class="ad-placeholder">Espaço para anúncio (conteúdo)</div>
             </div>
@@ -201,9 +179,15 @@
     </main>
 
     <footer class="site-footer" role="contentinfo">
-        <!-- AdSense no rodapé -->
+        <!-- AD: Rodapé -->
         <div class="ad-wrap ad-footer" aria-label="Publicidade rodapé">
-            <div class="ad-placeholder">Espaço para anúncio (rodapé)</div>
+            <ins class="adsbygoogle" style="display:block; width:100%" data-ad-client="ca-pub-8625122685851764"
+                data-ad-slot="5902822738" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                window.addEventListener('load', function () {
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                });
+            </script>
         </div>
 
         <p class="copyright">
@@ -211,10 +195,9 @@
         </p>
     </footer>
 
-    <!-- Arquivo de scripts (enviar depois). Aqui só referência. -->
+    <!-- JS -->
     <script src="app.js" defer></script>
 
-    <!-- Script mínimo inline só para o ano do rodapé (opcional). Remova se preferir 100% sem inline scripts. -->
     <script>
         (function () {
             var y = document.getElementById('year');

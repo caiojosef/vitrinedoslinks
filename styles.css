@@ -621,3 +621,50 @@ main {
 
   /* se quiser ainda menor, use 24px */
 }
+
+/* em vez de flex, deixe bloco para não colapsar */
+.ad-wrap {
+  margin: 16px 0;
+  display: block;
+}
+
+/* o elemento do AdSense precisa ter largura */
+.ad-wrap .adsbygoogle {
+  display: block;
+  width: 100%;
+}
+
+/* reserva altura para evitar “pulo” de layout */
+.ad-top .adsbygoogle {
+  min-height: 120px;
+}
+
+.ad-inline .adsbygoogle {
+  min-height: 90px;
+}
+
+.ad-footer .adsbygoogle {
+  min-height: 160px;
+}
+
+.ad-wrap {
+  display: block;
+  margin: 16px 0;
+}
+
+.ad-wrap .adsbygoogle {
+  display: block;
+  width: 100%;
+}
+
+.ad-top .adsbygoogle {
+  min-height: 120px;
+}
+
+.ad-inline .adsbygoogle {
+  min-height: 90px;
+}
+
+.ad-footer .adsbygoogle {
+  min-height: 160px;
+}
